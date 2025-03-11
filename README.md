@@ -85,11 +85,27 @@ Timing analysis is a critical step in RTL design, but it is typically performed 
 ## Results
 - **Best Model**: Neural Network (MLPRegressor).
 - **Performance**:
-  - **MSE**: 0.76
-  - **R² Score**: 0.69
+  - **MSE**: 0.647
+  - **R² Score**: 0.724
 - **Prediction Runtime**: Less than 1 second per signal.
 
 ---
+
+## Web Application
+To make the prediction process user-friendly and interactive, this project is deployed as a Streamlit web application. The app allows users to either:
+1️⃣ Input circuit parameters manually (e.g., Fan-In, Fan-Out, Gate Count, etc.).
+2️⃣ Paste Verilog RTL code to automatically extract circuit features for prediction.
+
+The app provides a real-time prediction of combinational logic depth, helping designers quickly assess circuit complexity without running full synthesis.
+
+The application is also deployed online for easy access. You can try it here:
+🔗 https://combinationalcomplexity.streamlit.app/
+
+![image](https://github.com/user-attachments/assets/1aac28cc-67b9-493d-99ff-3e3e9ba1a41a)
+
+
+---
+
 
 ## Applications
 - **Early Timing Analysis**: Predict timing violations during RTL design.
